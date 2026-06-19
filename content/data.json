@@ -1,0 +1,245 @@
+{
+  "company": {
+    "name": "CSS ENGINEERS PRIVATE LIMITED",
+    "shortName": "CSS Engineers Pvt. Ltd.",
+    "tagline": "Trusted Transmission Line, Survey & Geotechnical Engineering Solutions",
+    "logo": "assets/img/logo.jpg",
+    "favicon": "assets/img/favicon.svg",
+    "incorporated": "11 June 2026",
+    "act": "Companies Act, 2013",
+    "cin": "U42101UP2026PTC248868",
+    "registeredOffice": "C/o. Arati, 1st Floor, Derehun, Post-Chakia, Chakia, Chandauli - 232103, Uttar Pradesh, India",
+    "phone": "+91 8299080754",
+    "email": "cssengineerspvtltd@gmail.com"
+  },
+  "about": {
+    "title": "About CSS Engineers",
+    "paragraphs": [
+      "CSS ENGINEERS PRIVATE LIMITED is a leading transmission line survey, geotechnical, and foundation engineering company based in Chakia, Chandauli, Uttar Pradesh, India. With over 12 years of expertise, we deliver comprehensive surveying and engineering solutions for major transmission line projects across India.",
+      "Our team combines advanced surveying technologies with deep field expertise to provide accurate route alignment, detailed surveys, and robust geotechnical assessments. We have successfully completed 17+ transmission line projects totaling over 1,700 km for India's leading power sector contractors.",
+      "We are committed to delivering precision, reliability, and sustainable solutions that drive infrastructure development across the nation."
+    ],
+    "highlights": [
+      { "title": "Objective", "text": "To provide world-class transmission line survey, geotechnical engineering, and foundation solutions that support India's power infrastructure growth with accuracy, innovation, and reliability." },
+      { "title": "Our Strength", "text": "Skilled workforce of 30+ professionals, advanced surveying equipment (Total Stations, DGPS, GPS), comprehensive project experience, and proven track record with leading power contractors." }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive solutions for transmission line projects, surveys, and geotechnical engineering",
+    "categories": [
+      {
+        "id": "fieldwork",
+        "title": "On-Field Survey Activities",
+        "icon": "🛰️",
+        "items": [
+          "Route Alignment Survey",
+          "Preliminary Survey",
+          "Detailed Survey",
+          "Check Survey",
+          "Cadastral Survey",
+          "Topographical Survey",
+          "DGPS Survey",
+          "PLS-CADD Design"
+        ]
+      },
+      {
+        "id": "design",
+        "title": "Data Processing & Design",
+        "icon": "🖥️",
+        "items": [
+          "Route Alignment Maps",
+          "PLS-CADD Profiles",
+          "3D Drawings",
+          "Sag Templates",
+          "Crossing Proposals",
+          "Contour Maps",
+          "GIS Analysis",
+          "Digital Terrain Models"
+        ]
+      },
+      {
+        "id": "survey",
+        "title": "Specialized Surveys",
+        "icon": "📐",
+        "items": [
+          "Topographical Survey",
+          "Hydrographical Survey",
+          "Transmission Line Survey",
+          "Railway Survey",
+          "Road Survey",
+          "Sewerage Survey",
+          "Conveyor Route Survey",
+          "Mining Area Survey"
+        ]
+      },
+      {
+        "id": "geotech",
+        "title": "Geotechnical & Hydrological",
+        "icon": "🔬",
+        "items": [
+          "Sub-surface Sounding",
+          "Bearing Capacity Tests",
+          "Hydrological Observations",
+          "Meteorological Observations",
+          "Soil Testing",
+          "Rock Testing",
+          "Slope Stability Analysis",
+          "Site Characterization"
+        ]
+      },
+      {
+        "id": "foundation",
+        "title": "Foundation Work",
+        "icon": "🏗️",
+        "items": [
+          "Tower Foundation Construction",
+          "Civil Works",
+          "River Crossing Works",
+          "Long Route Construction",
+          "Foundation Design",
+          "Ground Improvement",
+          "Rock Excavation",
+          "Concrete Works"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Project Portfolio",
+    "subtitle": "17+ major transmission line projects completed across India",
+    "columns": ["#", "Work Description", "Km", "Client"],
+    "items": [
+      { "no": 1, "work": "765kV D/C Neemrana-II – Bareilly Transmission Line (PGCIL)", "km": 120, "client": "DBS Engineers Pvt. Ltd." },
+      { "no": 2, "work": "220kV & 132kV Intra-State Transmission Work in M.P. TBCB Package – I (Megha Engineering)", "km": 80, "client": "DBS Engineers Pvt. Ltd." },
+      { "no": 3, "work": "DVC 220kV Line Project", "km": 8, "client": "Skipper Limited" },
+      { "no": 4, "work": "LILO of 132kV Akbarpur – Tanda Transmission Line (UPPTCL)", "km": 60, "client": "UltraTech Cement Limited" },
+      { "no": 5, "work": "765kV D/C Neemrana-II – Bareilly Transmission Line", "km": 125, "client": "Kalpataru Projects International Limited" },
+      { "no": 6, "work": "765kV D/C Neemrana-II – Bareilly Transmission Line", "km": 115, "client": "KEC International Ltd." },
+      { "no": 7, "work": "765kV D/C Kurnool – Kurnool-III Transmission Line", "km": 107, "client": "KEC International Ltd." },
+      { "no": 8, "work": "765kV D/C Ahmedabad to South Olpad Transmission Line (Part-1)", "km": 115, "client": "Kalpataru Projects International Limited" },
+      { "no": 9, "work": "765kV D/C Ahmedabad to South Olpad Transmission Line (Part-2)", "km": 113, "client": "KEC International Ltd." },
+      { "no": 10, "work": "765kV D/C Vadodara to South Olpad Transmission Line", "km": 145, "client": "Transrail Lighting Limited" },
+      { "no": 11, "work": "220kV Chittorgarh – Karsana Transmission Line", "km": 58, "client": "Mohan Energy Corporation Pvt. Ltd." },
+      { "no": 12, "work": "220kV Karsana – Menar Transmission Line", "km": 32, "client": "Mohan Energy Corporation Pvt. Ltd." },
+      { "no": 13, "work": "800kV HVDC KPS-2 – Nagpur Transmission Line (TL02)", "km": 142, "client": "KEC International Ltd." },
+      { "no": 14, "work": "800kV HVDC KPS-2 – Nagpur Transmission Line (TL03)", "km": 83, "client": "KEC International Ltd." },
+      { "no": 15, "work": "800kV HVDC KPS-2 – Nagpur Transmission Line (TL05)", "km": 169, "client": "Kalpataru Projects International Limited" },
+      { "no": 16, "work": "400kV Siwani ��� Sonipat Transmission Line", "km": 138, "client": "Skipper Limited" },
+      { "no": 17, "work": "400kV Siwani – Jind Transmission Line", "km": 99, "client": "Bajel Projects Limited" }
+    ]
+  },
+  "clients": {
+    "title": "Our Clients",
+    "subtitle": "Trusted by India's leading power infrastructure contractors",
+    "items": [
+      "KEC International Ltd.",
+      "Kalpataru Projects International Limited",
+      "Skipper Limited",
+      "Transrail Lighting Limited",
+      "Bajel Projects Limited",
+      "DBS Engineers Pvt. Ltd.",
+      "Mohan Energy Corporation Pvt. Ltd.",
+      "UltraTech Cement Limited",
+      "Megha Engineering",
+      "PGCIL",
+      "UPPTCL",
+      "DVC"
+    ]
+  },
+  "gallery": {
+    "title": "Project Gallery",
+    "subtitle": "Visual highlights from our transmission line and survey projects",
+    "items": [
+      { "title": "Transmission Line Survey", "image": "assets/img/gallery/transmission-line.svg", "alt": "Transmission line survey work" },
+      { "title": "Topographical Survey", "image": "assets/img/gallery/hydrographical.svg", "alt": "Topographical survey operations" },
+      { "title": "Foundation Work", "image": "assets/img/gallery/foundation-work.svg", "alt": "Tower foundation construction" },
+      { "title": "Foundation Engineering", "image": "assets/img/gallery/foundation-work-2.svg", "alt": "Foundation engineering work" },
+      { "title": "Railway Survey", "image": "assets/img/gallery/railway-survey.svg", "alt": "Railway route survey" },
+      { "title": "Conveyor Route Survey", "image": "assets/img/gallery/conveyor-route.svg", "alt": "Conveyor route planning" },
+      { "title": "Soil Testing", "image": "assets/img/gallery/soil-testing.svg", "alt": "Soil testing and analysis" },
+      { "title": "Mining Area Survey", "image": "assets/img/gallery/mining-area.svg", "alt": "Mining area survey" }
+    ]
+  },
+  "sampleReports": {
+    "title": "Sample Technical Reports",
+    "subtitle": "Representative survey and engineering deliverables",
+    "items": [
+      { "title": "Route Alignment Map", "image": "assets/img/reports/route-alignment-map.jpg", "alt": "Transmission line route alignment map with terrain overlay", "desc": "Detailed route alignment map showing terrain, obstacles, and proposed tower locations" },
+      { "title": "Line Profile", "image": "assets/img/reports/line-profile.jpg", "alt": "Transmission line elevation profile", "desc": "Engineering profile showing elevation changes, clearances, and crossing details" },
+      { "title": "3D Terrain Model", "image": "assets/img/reports/3d-profile.jpg", "alt": "3D terrain profile of transmission route", "desc": "3D visualization of route terrain for better visualization and planning" }
+    ]
+  },
+  "equipment": {
+    "title": "Equipment & Team",
+    "subtitle": "Advanced instrumentation and experienced workforce",
+    "instrumentsTitle": "Survey Instruments",
+    "instruments": [
+      { "name": "South Total Station", "qty": 2 },
+      { "name": "Topcon Total Station", "qty": 1 },
+      { "name": "Geomax Zoom 20", "qty": 1 },
+      { "name": "Sokkia IM-55", "qty": 2 },
+      { "name": "E-Survey DGPS 300 Pro", "qty": 6 },
+      { "name": "E-Survey DGPS 800", "qty": 2 },
+      { "name": "Hand-held GPS", "qty": 10 }
+    ],
+    "staffTitle": "Professional Team",
+    "staff": [
+      { "role": "Senior Surveyor", "count": 7 },
+      { "role": "Junior Surveyor", "count": 10 },
+      { "role": "Assistant Surveyor", "count": 9 },
+      { "role": "PLS-CADD Engineer", "count": 1 },
+      { "role": "AutoCAD Draughtsman", "count": 5 },
+      { "role": "Accounts", "count": 1 }
+    ],
+    "keyPerson": {
+      "name": "C. S. Singh",
+      "role": "Surveyor & Founder",
+      "experience": "12+ years",
+      "previous": "DBS Engineers, RS Infra Project, Bajaj Electricals, Associated Power Structures, Prakash Electricals"
+    }
+  },
+  "whyUs": {
+    "title": "Why Choose CSS Engineers",
+    "headline": "We combine cutting-edge surveying technology with 12+ years of field expertise to deliver accurate, reliable, and sustainable engineering solutions.",
+    "strengths": [
+      "Experienced team with proven track record in transmission line projects",
+      "Advanced surveying equipment and technology (Total Stations, DGPS, GIS)",
+      "Comprehensive service offerings from survey to design to foundation work",
+      "Strong relationships with India's leading power infrastructure contractors",
+      "Commitment to accuracy, safety, and project timeliness",
+      "Skilled workforce of 30+ professionals"
+    ],
+    "stats": [
+      { "label": "Years of Experience", "value": "12+" },
+      { "label": "Transmission Line Projects", "value": "17+" },
+      { "label": "Line Km Surveyed", "value": "1,700+" },
+      { "label": "Skilled Workforce", "value": "30+" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with CSS Engineers for project inquiries and partnership opportunities",
+    "phone": "+91 8299080754",
+    "email": "cssengineerspvtltd@gmail.com",
+    "address": "C/o. Arati, 1st Floor, Derehun, Post-Chakia, Chakia, Chandauli - 232103, Uttar Pradesh, India",
+    "mapQuery": "Chakia, Chandauli, Uttar Pradesh, India",
+    "form": {
+      "type": "mailto",
+      "action": "mailto:cssengineerspvtltd@gmail.com"
+    }
+  },
+  "navigation": [
+    { "id": "home", "label": "Home" },
+    { "id": "about", "label": "About" },
+    { "id": "services", "label": "Services" },
+    { "id": "projects", "label": "Projects" },
+    { "id": "clients", "label": "Clients" },
+    { "id": "gallery", "label": "Gallery" },
+    { "id": "why-us", "label": "Why Us" },
+    { "id": "contact", "label": "Contact" }
+  ],
+  "footer": {
+    "copyright": "© 2026 CSS ENGINEERS PRIVATE LIMITED. All rights reserved. CIN: U42101UP2026PTC248868"
+  }
+}
