@@ -34,9 +34,8 @@ function renderSite(data) {
   renderClients(data.clients);
   renderGallery(data.gallery);
   renderSampleReports(data.sampleReports);
-  renderEquipment(data.equipment);
   renderWhyUs(data.whyUs);
-  renderContact(data.contact);
+  renderContact(data.contact, data.company);
   renderFooter(data.company, data.footer);
 }
 
@@ -205,40 +204,12 @@ function renderSampleReports(reports) {
   `).join('');
 }
 
-// Render equipment
-function renderEquipment(equipment) {
-  document.getElementById('equipment-subtitle').textContent = equipment.subtitle;
-  
-  const equipmentGrid = document.getElementById('equipment-grid');
-  
-  let html = `
-    <div class="equipment-section scroll-reveal">
-      <h3>${equipment.instrumentsTitle}</h3>
-      ${equipment.instruments.map(inst => `
-        <div class="equipment-item">
-          <span class="equipment-name">${inst.name}</span>
-          <span class="equipment-qty">${inst.qty}</span>
-        </div>
-      `).join('')}
-    </div>
-    <div class="equipment-section scroll-reveal">
-      <h3>${equipment.staffTitle}</h3>
-      ${equipment.staff.map(staff => `
-        <div class="equipment-item">
-          <span class="equipment-name">${staff.role}</span>
-          <span class="equipment-qty">${staff.count}</span>
-        </div>
-      `).join('')}
-      <div class="key-person">
-        <h4>${equipment.keyPerson.name}</h4>
-        <p><strong>${equipment.keyPerson.role}</strong></p>
-        <p>Experience: ${equipment.keyPerson.experience}</p>
-        <p style="font-size: 0.85rem; margin-top: 0.5rem; color: #9ca3af;">Previously: ${equipment.keyPerson.previous}</p>
-      </div>
-    </div>
-  `;
-  
-  equipmentGrid.innerHTML = html;
+// Generate WhatsApp QR code URL (using QR code API)
+function generateWhatsAppQRCode(phoneNumber) {
+  // Using qr-server.com API to generate QR code for WhatsApp
+  const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}`;
+  const qrCodeURL = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(whatsappURL)}`;
+  return qrCodeURL;
 }
 
 // Render why us
@@ -262,10 +233,12 @@ function renderWhyUs(whyUs) {
 }
 
 // Render contact
-function renderContact(contact) {
+function renderContact(contact, company) {
   document.getElementById('contact-subtitle').textContent = contact.subtitle;
   
   const contactInfo = document.getElementById('contact-info');
+  const whatsappQRCode = generateWhatsAppQRCode(contact.phone);
+  
   contactInfo.innerHTML = `
     <div class="contact-item">
       <div class="contact-icon">📞</div>
@@ -286,6 +259,17 @@ function renderContact(contact) {
       <div class="contact-details">
         <h3>Address</h3>
         <p>${contact.address}</p>
+      </div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">💬</div>
+      <div class="contact-details">
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/${contact.phone.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener noreferrer" class="whatsapp-link">Start a conversation</a>
+        <div class="whatsapp-qr-container">
+          <img src="${whatsappQRCode}" alt="WhatsApp QR Code" class="whatsapp-qr" title="Scan to start WhatsApp conversation">
+          <p class="qr-label">Scan to WhatsApp</p>
+        </div>
       </div>
     </div>
   `;
