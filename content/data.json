@@ -15,13 +15,13 @@
   "about": {
     "title": "About CSS Engineers",
     "paragraphs": [
-      "CSS ENGINEERS PRIVATE LIMITED is a leading transmission line survey, geotechnical, and foundation engineering company based in Chakia, Chandauli, Uttar Pradesh, India. With over 12 years of expertise, we deliver comprehensive surveying and engineering solutions for major transmission line projects across India.",
-      "Our team combines advanced surveying technologies with deep field expertise to provide accurate route alignment, detailed surveys, and robust geotechnical assessments. We have successfully completed 17+ transmission line projects totaling over 1,700 km for India's leading power sector contractors.",
+      "CSS ENGINEERS PRIVATE LIMITED is a leading transmission line survey, geotechnical, and foundation engineering company based in Chakia, Chandauli, Uttar Pradesh, India. With over 12 years of experience, we deliver precise surveys and robust engineering solutions for India's power infrastructure.",
+      "Our team combines advanced surveying technologies with deep field expertise to provide accurate route alignment, detailed surveys, and robust geotechnical assessments. We have successfully completed 17+ major transmission line projects across multiple states.",
       "We are committed to delivering precision, reliability, and sustainable solutions that drive infrastructure development across the nation."
     ],
     "highlights": [
-      { "title": "Objective", "text": "To provide world-class transmission line survey, geotechnical engineering, and foundation solutions that support India's power infrastructure growth with accuracy, innovation, and reliability." },
-      { "title": "Our Strength", "text": "Skilled workforce of 30+ professionals, advanced surveying equipment (Total Stations, DGPS, GPS), comprehensive project experience, and proven track record with leading power contractors." }
+      { "title": "Objective", "text": "To provide world-class transmission line survey, geotechnical engineering, and foundation solutions that support India's power infrastructure growth with accuracy and reliability." },
+      { "title": "Our Strength", "text": "Skilled workforce of 30+ professionals, advanced surveying equipment (Total Stations, DGPS, GPS), comprehensive project experience, and proven track record with leading clients." }
     ]
   },
   "services": {
@@ -32,6 +32,8 @@
         "id": "fieldwork",
         "title": "On-Field Survey Activities",
         "icon": "🛰️",
+        "image": "assets/img/services/on-field-survey.jpg",
+        "alt": "On-field survey activities with surveying equipment",
         "items": [
           "Route Alignment Survey",
           "Preliminary Survey",
@@ -47,6 +49,8 @@
         "id": "design",
         "title": "Data Processing & Design",
         "icon": "🖥️",
+        "image": "assets/img/services/data-processing-design-route.jpg",
+        "alt": "Data processing and route design engineering",
         "items": [
           "Route Alignment Maps",
           "PLS-CADD Profiles",
@@ -59,39 +63,62 @@
         ]
       },
       {
-        "id": "survey",
-        "title": "Specialized Surveys",
-        "icon": "📐",
+        "id": "transmission",
+        "title": "Transmission Line Construction",
+        "icon": "⚡",
+        "image": "assets/img/services/transmission-line.jpg",
+        "alt": "Transmission line construction and tower installation",
         "items": [
-          "Topographical Survey",
-          "Hydrographical Survey",
-          "Transmission Line Survey",
-          "Railway Survey",
-          "Road Survey",
-          "Sewerage Survey",
-          "Conveyor Route Survey",
-          "Mining Area Survey"
+          "Tower Erection",
+          "Line Installation",
+          "Stringing Work",
+          "Grounding",
+          "Testing & Commissioning",
+          "Route Inspection",
+          "Cable Management",
+          "System Integration"
         ]
       },
       {
-        "id": "geotech",
-        "title": "Geotechnical & Hydrological",
-        "icon": "🔬",
+        "id": "substation",
+        "title": "Substation Construction",
+        "icon": "🔌",
+        "image": "assets/img/services/substation.jpg",
+        "alt": "Electrical substation construction and equipment installation",
         "items": [
-          "Sub-surface Sounding",
-          "Bearing Capacity Tests",
-          "Hydrological Observations",
-          "Meteorological Observations",
-          "Soil Testing",
-          "Rock Testing",
-          "Slope Stability Analysis",
-          "Site Characterization"
+          "Substation Layout Design",
+          "Equipment Installation",
+          "Control Systems",
+          "Safety Systems",
+          "Power Distribution",
+          "Testing Protocols",
+          "Maintenance Support",
+          "Capacity Planning"
+        ]
+      },
+      {
+        "id": "epc",
+        "title": "EPC Projects",
+        "icon": "🏭",
+        "image": "assets/img/services/epc-project.jpg",
+        "alt": "Engineering, procurement and construction project management",
+        "items": [
+          "Engineering Design",
+          "Materials Procurement",
+          "Quality Assurance",
+          "Project Management",
+          "Schedule Coordination",
+          "Cost Control",
+          "Risk Management",
+          "Stakeholder Communication"
         ]
       },
       {
         "id": "foundation",
         "title": "Foundation Work",
         "icon": "🏗️",
+        "image": "assets/img/services/foundation-work.jpg",
+        "alt": "Tower foundation construction and geotechnical engineering",
         "items": [
           "Tower Foundation Construction",
           "Civil Works",
@@ -101,6 +128,74 @@
           "Ground Improvement",
           "Rock Excavation",
           "Concrete Works"
+        ]
+      },
+      {
+        "id": "stringing",
+        "title": "Stringing Work",
+        "icon": "🔗",
+        "image": "assets/img/services/stringing.jpg",
+        "alt": "Power line stringing and cable installation",
+        "items": [
+          "Conductor Stringing",
+          "Earth Wire Installation",
+          "Tensioning",
+          "Sagging",
+          "Clipping & Clamping",
+          "Joint Assembly",
+          "Splice Installation",
+          "Performance Testing"
+        ]
+      },
+      {
+        "id": "testing",
+        "title": "Testing & Commissioning",
+        "icon": "✅",
+        "image": "assets/img/services/testing.jpg",
+        "alt": "Electrical testing and system commissioning procedures",
+        "items": [
+          "High-Voltage Testing",
+          "Insulation Testing",
+          "Load Testing",
+          "Functional Testing",
+          "Safety Testing",
+          "Performance Validation",
+          "Documentation",
+          "Final Handover"
+        ]
+      },
+      {
+        "id": "civil",
+        "title": "Civil Infrastructure",
+        "icon": "🌉",
+        "image": "assets/img/services/civil.jpg",
+        "alt": "Civil infrastructure development and road construction",
+        "items": [
+          "Access Road Development",
+          "Drainage Systems",
+          "Soil Stabilization",
+          "Grading & Leveling",
+          "Surface Preparation",
+          "Infrastructure Maintenance",
+          "Site Reclamation",
+          "Environmental Compliance"
+        ]
+      },
+      {
+        "id": "project-mgmt",
+        "title": "Project Management",
+        "icon": "📊",
+        "image": "assets/img/services/project-management.jpg",
+        "alt": "Project management and coordination",
+        "items": [
+          "Planning & Scheduling",
+          "Resource Allocation",
+          "Budget Management",
+          "Risk Assessment",
+          "Team Coordination",
+          "Progress Tracking",
+          "Quality Monitoring",
+          "Stakeholder Reporting"
         ]
       }
     ]
@@ -125,7 +220,7 @@
       { "no": 13, "work": "800kV HVDC KPS-2 – Nagpur Transmission Line (TL02)", "km": 142, "client": "KEC International Ltd." },
       { "no": 14, "work": "800kV HVDC KPS-2 – Nagpur Transmission Line (TL03)", "km": 83, "client": "KEC International Ltd." },
       { "no": 15, "work": "800kV HVDC KPS-2 – Nagpur Transmission Line (TL05)", "km": 169, "client": "Kalpataru Projects International Limited" },
-      { "no": 16, "work": "400kV Siwani ��� Sonipat Transmission Line", "km": 138, "client": "Skipper Limited" },
+      { "no": 16, "work": "400kV Siwani – Sonipat Transmission Line", "km": 138, "client": "Skipper Limited" },
       { "no": 17, "work": "400kV Siwani – Jind Transmission Line", "km": 99, "client": "Bajel Projects Limited" }
     ]
   },
@@ -133,18 +228,78 @@
     "title": "Our Clients",
     "subtitle": "Trusted by India's leading power infrastructure contractors",
     "items": [
-      "KEC International Ltd.",
-      "Kalpataru Projects International Limited",
-      "Skipper Limited",
-      "Transrail Lighting Limited",
-      "Bajel Projects Limited",
-      "DBS Engineers Pvt. Ltd.",
-      "Mohan Energy Corporation Pvt. Ltd.",
-      "UltraTech Cement Limited",
-      "Megha Engineering",
-      "PGCIL",
-      "UPPTCL",
-      "DVC"
+      {
+        "name": "KEC International Ltd.",
+        "logo": "assets/img/clients/kec.svg",
+        "alt": "KEC International Ltd logo",
+        "url": "https://www.kecrpg.com/"
+      },
+      {
+        "name": "Kalpataru Projects International Limited",
+        "logo": "assets/img/clients/kalpataru.svg",
+        "alt": "Kalpataru Projects International Limited logo",
+        "url": "https://kalpataruprojects.com/"
+      },
+      {
+        "name": "Skipper Limited",
+        "logo": "assets/img/clients/skipper.svg",
+        "alt": "Skipper Limited logo",
+        "url": "https://www.skipperlimited.com/"
+      },
+      {
+        "name": "Transrail Lighting Limited",
+        "logo": "assets/img/clients/transrail.svg",
+        "alt": "Transrail Lighting Limited logo",
+        "url": "https://transrail.in/media/"
+      },
+      {
+        "name": "Bajel Projects Limited",
+        "logo": "assets/img/clients/bajel.svg",
+        "alt": "Bajel Projects Limited logo",
+        "url": "https://www.bajelprojects.com/"
+      },
+      {
+        "name": "DBS Engineers Pvt. Ltd.",
+        "logo": "assets/img/clients/dbs-engineers.svg",
+        "alt": "DBS Engineers Pvt. Ltd. logo",
+        "url": "https://dbsengineers.com/"
+      },
+      {
+        "name": "Mohan Energy Corporation Pvt. Ltd.",
+        "logo": "assets/img/clients/mohan-energy.svg",
+        "alt": "Mohan Energy Corporation Pvt. Ltd. logo",
+        "url": "https://mohanenergy.com/"
+      },
+      {
+        "name": "UltraTech Cement Limited",
+        "logo": "assets/img/clients/ultratech.svg",
+        "alt": "UltraTech Cement Limited logo",
+        "url": "https://www.ultratechcement.com/about-us/media/press-kit"
+      },
+      {
+        "name": "Megha Engineering (MEIL)",
+        "logo": "assets/img/clients/meil.svg",
+        "alt": "Megha Engineering MEIL logo",
+        "url": "https://www.meil.in/"
+      },
+      {
+        "name": "PGCIL",
+        "logo": "assets/img/clients/pgcil.svg",
+        "alt": "Power Grid Corporation of India Limited logo",
+        "url": "https://www.powergrid.in/"
+      },
+      {
+        "name": "UPPTCL",
+        "logo": "assets/img/clients/upptcl.svg",
+        "alt": "Uttar Pradesh Poorv Kshetra Vidyut Limited logo",
+        "url": "https://www.upptcl.org/"
+      },
+      {
+        "name": "DVC",
+        "logo": "assets/img/clients/dvc.svg",
+        "alt": "Damodar Valley Corporation logo",
+        "url": "https://www.dvc.gov.in/"
+      }
     ]
   },
   "gallery": {
