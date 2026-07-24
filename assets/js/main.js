@@ -102,28 +102,39 @@ function renderAbout(about, company) {
   `;
 }
 
-// Render services
+// Render services with images
 function renderServices(services) {
   const serviceIcons = {
     survey: '📐',
     geotech: '🔬',
     foundation: '🏗️',
     fieldwork: '🛰️',
-    design: '🖥️'
+    design: '🖥️',
+    transmission: '⚡',
+    substation: '🔌',
+    epc: '🏭',
+    stringing: '🔗',
+    testing: '✅',
+    civil: '🌉',
+    'project-mgmt': '📊'
   };
   
   document.getElementById('services-subtitle').textContent = services.subtitle;
   
   const servicesGrid = document.getElementById('services-grid');
-  servicesGrid.innerHTML = services.categories.map(cat => `
-    <div class="service-card scroll-reveal">
-      <div class="service-icon">${serviceIcons[cat.id] || cat.icon}</div>
-      <h3>${cat.title}</h3>
-      <ul>
-        ${cat.items.map(item => `<li>${item}</li>`).join('')}
-      </ul>
-    </div>
-  `).join('');
+  servicesGrid.innerHTML = services.categories.map(cat => {
+    const hasImage = cat.image && cat.alt;
+    return `
+      <div class="service-card scroll-reveal">
+        ${hasImage ? `<img src="${cat.image}" alt="${cat.alt}" class="service-image" loading="lazy">` : ''}
+        <div class="service-icon">${serviceIcons[cat.id] || cat.icon}</div>
+        <h3>${cat.title}</h3>
+        <ul>
+          ${cat.items.map(item => `<li>${item}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }).join('');
 }
 
 // Render projects
@@ -163,16 +174,30 @@ function renderProjects(projects) {
   `).join('');
 }
 
-// Render clients
+// Render clients with logos
 function renderClients(clients) {
   document.getElementById('clients-subtitle').textContent = clients.subtitle;
   
   const clientsGrid = document.getElementById('clients-grid');
-  clientsGrid.innerHTML = clients.items.map((client, i) => `
-    <div class="client-card scroll-reveal" style="transition-delay: ${i * 50}ms;">
-      <p>${client}</p>
-    </div>
-  `).join('');
+  clientsGrid.innerHTML = clients.items.map((client, i) => {
+    // Handle both old string format and new object format
+    if (typeof client === 'string') {
+      return `
+        <div class="client-card scroll-reveal" style="transition-delay: ${i * 50}ms;">
+          <p>${client}</p>
+        </div>
+      `;
+    } else {
+      // New format with logo
+      return `
+        <div class="client-card scroll-reveal" style="transition-delay: ${i * 50}ms;">
+          <a href="${client.url}" target="_blank" rel="noopener noreferrer" class="client-logo-link">
+            <img src="${client.logo}" alt="${client.alt}" class="client-logo" loading="lazy">
+          </a>
+        </div>
+      `;
+    }
+  }).join('');
 }
 
 // Render gallery
@@ -182,7 +207,7 @@ function renderGallery(gallery) {
   const galleryGrid = document.getElementById('gallery-grid');
   galleryGrid.innerHTML = gallery.items.map(item => `
     <div class="gallery-item scroll-reveal">
-      <img src="${item.image}" alt="${item.alt}" class="gallery-image">
+      <img src="${item.image}" alt="${item.alt}" class="gallery-image" loading="lazy">
       <div class="gallery-title">${item.title}</div>
     </div>
   `).join('');
@@ -195,7 +220,7 @@ function renderSampleReports(reports) {
   const reportsGrid = document.getElementById('reports-grid');
   reportsGrid.innerHTML = reports.items.map(item => `
     <div class="report-card scroll-reveal">
-      <img src="${item.image}" alt="${item.alt}" class="report-image">
+      <img src="${item.image}" alt="${item.alt}" class="report-image" loading="lazy">
       <div class="report-content">
         <h3 class="report-title">${item.title}</h3>
         <p class="report-desc">${item.desc}</p>
@@ -267,7 +292,7 @@ function renderContact(contact, company) {
         <h3>WhatsApp</h3>
         <a href="https://wa.me/${contact.phone.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener noreferrer" class="whatsapp-link">Start a conversation</a>
         <div class="whatsapp-qr-container">
-          <img src="${whatsappQRCode}" alt="WhatsApp QR Code" class="whatsapp-qr" title="Scan to start WhatsApp conversation">
+          <img src="${whatsappQRCode}" alt="WhatsApp QR Code" class="whatsapp-qr" title="Scan to start WhatsApp conversation" loading="lazy">
           <p class="qr-label">Scan to WhatsApp</p>
         </div>
       </div>
