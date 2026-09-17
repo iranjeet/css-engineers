@@ -356,10 +356,12 @@ body {
 
 .service-card {
   background: var(--color-black);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
   border: 1px solid rgba(43, 164, 240, 0.2);
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
@@ -367,15 +369,24 @@ body {
   transform: translateY(-4px);
 }
 
-.service-icon {
-  font-size: 2.5rem;
+.service-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.375rem;
   margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 .service-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: var(--color-blue);
 }
 
@@ -471,7 +482,7 @@ body {
 
 .client-card {
   background: var(--color-black);
-  padding: 2rem;
+  padding: 1.25rem;
   border-radius: 0.5rem;
   text-align: center;
   border: 1px solid rgba(43, 164, 240, 0.2);
@@ -479,7 +490,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 120px;
+  min-height: 90px;
 }
 
 .client-card:hover {
@@ -490,15 +501,37 @@ body {
 .client-card p {
   color: var(--color-white);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.4;
+}
+
+.client-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.client-logo {
+  max-width: 160px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.client-card:hover .client-logo {
+  transform: scale(1.05);
 }
 
 /* Gallery */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
 }
 
 .gallery-item {
@@ -516,13 +549,14 @@ body {
 
 .gallery-image {
   width: 100%;
-  height: 200px;
+  height: 170px;
   background: var(--color-gray-100);
   object-fit: cover;
 }
 
 .gallery-title {
-  padding: 1rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--color-gray-700);
 }
@@ -530,8 +564,8 @@ body {
 /* Sample Reports */
 .reports-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .report-card {
@@ -549,7 +583,7 @@ body {
 
 .report-image {
   width: 100%;
-  height: 250px;
+  height: 180px;
   background: var(--color-gray-200);
   object-fit: cover;
 }

@@ -21,7 +21,7 @@ open http://localhost:8080
 - **Home** — Company introduction & hero
 - **About** — Mission, objectives, legal information
 - **Services** — 5 service categories (survey, design, geotechnical, foundation, fieldwork)
-- **Projects** — 17 transmission line projects (1,700+ km)
+- **Projects** — 19 transmission line projects (1,900+ km)
 - **Clients** — 12 major clients
 - **Gallery** — 8 project samples
 - **Sample Reports** — 3 technical report images

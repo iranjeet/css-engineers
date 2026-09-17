@@ -126,7 +126,7 @@ function renderServices(services) {
     const hasImage = cat.image && cat.alt;
     return `
       <div class="service-card scroll-reveal">
-        ${hasImage ? `<img src="${cat.image}" alt="${cat.alt}" class="service-image" loading="lazy">` : ''}
+        ${hasImage ? `<img src="${cat.image}" alt="${cat.alt}" class="service-image" loading="lazy" onerror="this.style.display='none'">` : ''}
         <div class="service-icon">${serviceIcons[cat.id] || cat.icon}</div>
         <h3>${cat.title}</h3>
         <ul>
@@ -192,7 +192,7 @@ function renderClients(clients) {
       return `
         <div class="client-card scroll-reveal" style="transition-delay: ${i * 50}ms;">
           <a href="${client.url}" target="_blank" rel="noopener noreferrer" class="client-logo-link">
-            <img src="${client.logo}" alt="${client.alt}" class="client-logo" loading="lazy">
+            <img src="${client.logo}" alt="${client.alt}" class="client-logo" loading="lazy" onerror="this.parentElement.innerHTML='<p>${client.name}</p>'">
           </a>
         </div>
       `;
@@ -207,7 +207,7 @@ function renderGallery(gallery) {
   const galleryGrid = document.getElementById('gallery-grid');
   galleryGrid.innerHTML = gallery.items.map(item => `
     <div class="gallery-item scroll-reveal">
-      <img src="${item.image}" alt="${item.alt}" class="gallery-image" loading="lazy">
+      <img src="${item.image}" alt="${item.alt}" class="gallery-image" loading="lazy" onerror="this.style.display='none'">
       <div class="gallery-title">${item.title}</div>
     </div>
   `).join('');
@@ -301,7 +301,7 @@ function renderContact(contact, company) {
   
   const mapDiv = document.getElementById('contact-map');
   const mapQuery = encodeURIComponent(contact.mapQuery);
-  mapDiv.innerHTML = `<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDhzZHmY0QgdJuLKxsLjVqXBTWmTgVfx5w&q=${mapQuery}" allowfullscreen="" loading="lazy"></iframe>`;
+  mapDiv.innerHTML = `<iframe src="https://maps.google.com/maps?q=${mapQuery}&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>`;
   
   const formContainer = document.getElementById('contact-form-container');
   const isFormspree = contact.form && contact.form.type === 'formspree';
