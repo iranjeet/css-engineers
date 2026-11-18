@@ -2,183 +2,192 @@
   "company": {
     "name": "CSS ENGINEERS PRIVATE LIMITED",
     "shortName": "CSS Engineers Pvt. Ltd.",
-    "tagline": "Trusted Transmission Line, Survey & Geotechnical Engineering Solutions",
+    "tagline": "Engineering and Infrastructure Solutions for Transmission, Civil Construction & Roads",
     "logo": "assets/images/logo_bg_removed.jpg",
-    "favicon": "assets/img/favicon.svg",
-    "incorporated": "11 June 2026",
-    "act": "Companies Act, 2013",
-    "cin": "U42101UP2026PTC248868",
+    "favicon": "assets/images/logo_bg_removed.jpg",
     "registeredOffice": "C/o. Arati, 1st Floor, Derehun, Post-Chakia, Chakia, Chandauli - 232103, Uttar Pradesh, India",
-    "phone": "+91 8299080754",
+    "phone": "05413-297050",
     "email": "cssengineerspvtltd@gmail.com"
   },
   "about": {
     "title": "About CSS Engineers",
     "paragraphs": [
-      "CSS ENGINEERS PRIVATE LIMITED is a leading transmission line survey, geotechnical, and foundation engineering company based in Chakia, Chandauli, Uttar Pradesh, India. With over 12 years of experience, we deliver precise surveys and robust engineering solutions for India's power infrastructure.",
-      "Our team combines advanced surveying technologies with deep field expertise to provide accurate route alignment, detailed surveys, and robust geotechnical assessments. We have successfully completed 17+ major transmission line projects across multiple states.",
-      "We are committed to delivering precision, reliability, and sustainable solutions that drive infrastructure development across the nation."
+      "CSS Engineers Private Limited is a recognized leader in the Transmission and Distribution (T&D) sector, delivering engineering and infrastructure solutions across power transmission, civil construction, road construction, and operation and maintenance."
     ],
-    "highlights": [
-      { "title": "Objective", "text": "To provide world-class transmission line survey, geotechnical engineering, and foundation solutions that support India's power infrastructure growth with accuracy and reliability." },
-      { "title": "Our Strength", "text": "Skilled workforce of 30+ professionals, advanced surveying equipment (Total Stations, DGPS, GPS), comprehensive project experience, and proven track record with leading clients." }
+    "sections": [
+      {
+        "title": "About CSS Engineers",
+        "paragraphs": [
+          "The company specializes in civil construction works, road construction, power transmission, and operation and maintenance (O&M) services. Our skilled and experienced engineers stay current with evolving technologies, industry standards, and market requirements.",
+          "We pursue customer satisfaction through quality workmanship, strict adherence to safety standards, and timely project execution. Our dependable solutions serve private organizations, public sector enterprises, and government departments, building lasting relationships across the engineering and infrastructure industry."
+        ]
+      },
+      {
+        "title": "Who We Are",
+        "paragraphs": [
+          "CSS Engineers Private Limited is a professionally managed engineering and infrastructure development company working in Transmission & Distribution (T&D), Power Infrastructure, Civil Construction, and Road Construction.",
+          "Our dedicated engineers, skilled professionals, and experienced technical personnel share a vision of building reliable, sustainable, and high-quality infrastructure. We serve government departments, public sector undertakings, and private organizations by understanding their requirements and meeting industry standards and project expectations.",
+          "We see every engagement as an opportunity to demonstrate our capabilities, strengthen relationships, and contribute to the nation's infrastructure development."
+        ]
+      },
+      {
+        "title": "Our Vision",
+        "paragraphs": [
+          "To become a leading and trusted engineering and infrastructure solutions provider in India by delivering innovative, sustainable, and high-quality services in Transmission & Distribution, Civil Construction, Road Construction, and Power Infrastructure.",
+          "We aspire to set benchmarks in engineering excellence through advanced technology, skilled professionals, uncompromising safety standards, timely execution, and customer satisfaction, contributing to the nation's infrastructure development and sustainable growth."
+        ]
+      },
+      {
+        "title": "Our Mission",
+        "paragraphs": [
+          "To deliver reliable, high-quality, and cost-effective engineering and infrastructure solutions that exceed customer expectations."
+        ],
+        "items": [
+          "Provide excellence in Transmission & Distribution, Civil Construction, Road Construction, and Power Infrastructure.",
+          "Maintain high standards of quality, safety, and environmental responsibility.",
+          "Complete projects within committed timeframes through efficient planning and execution.",
+          "Adopt modern technologies and innovative engineering practices.",
+          "Develop a skilled, dedicated, and professional workforce.",
+          "Build long-term relationships with government departments, public sector undertakings, and private organizations.",
+          "Ensure 100% customer satisfaction through integrity, transparency, and continuous improvement."
+        ]
+      },
+      {
+        "title": "Our People – Our Strength",
+        "paragraphs": [
+          "Our people are the foundation of our success. Skilled and dedicated engineers, technical experts, supervisors, and support professionals work together with practical experience and a strong commitment to quality and safety.",
+          "We encourage learning, professional development, and modern technologies, fostering a culture of trust, integrity, discipline, collaboration, and mutual respect."
+        ]
+      },
+      {
+        "title": "Company Capabilities",
+        "paragraphs": [
+          "Our experienced engineers, skilled technicians, and dedicated professionals support a wide range of engineering, construction, and infrastructure development work."
+        ],
+        "items": [
+          "Power Transmission & Distribution: Engineering, installation, construction, and related electrical infrastructure activities.",
+          "Operation & Maintenance: Operation, inspection, maintenance, and technical support for power transmission and distribution systems.",
+          "Civil Construction: Foundation works, structural construction, site development, and associated civil works.",
+          "Road Construction: Development, improvement, and maintenance of roads and related infrastructure.",
+          "Engineering & Technical Services: Technical planning, project coordination, and execution support.",
+          "Project Management: Planning, resource management, site supervision, coordination, monitoring, and timely execution.",
+          "Quality & Safety Management: Quality workmanship, workplace safety, risk awareness, and applicable industry standards.",
+          "Skilled Workforce: Qualified engineers, experienced supervisors, skilled technicians, and trained technical personnel."
+        ]
+      },
+      {
+        "title": "Our Competitive Strengths",
+        "items": [
+          "Strong technical and engineering expertise.",
+          "Commitment to quality and customer satisfaction.",
+          "Efficient project planning and execution.",
+          "Focus on safety and environmental responsibility.",
+          "Timely delivery and effective resource utilization.",
+          "Ability to serve government, public sector, and private sector organizations.",
+          "Continuous improvement and technological advancement."
+        ]
+      },
+      {
+        "title": "Technology & Equipment",
+        "paragraphs": [
+          "We use appropriate construction machinery, engineering tools, modern equipment, and technology-driven methods to support precision, productivity, safety, and timely project completion. Our approach combines technical expertise, skilled manpower, and effective equipment management.",
+          "We continuously improve our technological capabilities through modern engineering practices, equipment standards, and workforce development. Our objective is accuracy, efficiency, safety, and reliability in every project."
+        ],
+        "items": [
+          "Power transmission tools and equipment for installation, maintenance, and related electrical infrastructure work.",
+          "Civil construction machinery for foundation work and infrastructure development.",
+          "Road construction equipment for road development, earthwork, grading, and construction.",
+          "Surveying and measurement instruments for site surveys, measurements, alignment, and planning.",
+          "Electrical testing equipment for inspection, maintenance, and quality assurance.",
+          "Personal protective equipment (PPE) and safety systems for safe working conditions.",
+          "Digital engineering tools for planning, monitoring, coordination, and project execution.",
+          "Maintenance tools and equipment for operation, inspection, and maintenance activities."
+        ]
+      },
+      {
+        "title": "Quality, Health, Safety & Environment",
+        "paragraphs": [
+          "Quality, health, safety, and environmental responsibility guide our engineering and construction activities. Successful project execution depends on quality standards, workplace safety, environmental protection, and the well-being of everyone involved."
+        ],
+        "items": [
+          "Strive for quality in materials, workmanship, engineering processes, and project execution.",
+          "Promote safe working practices and awareness among employees and project personnel.",
+          "Identify workplace hazards and take appropriate preventive measures.",
+          "Use resources responsibly and minimize avoidable environmental impacts.",
+          "Promote safety training, protective equipment, and applicable safety procedures.",
+          "Review work practices and continuously improve quality, safety, and operational performance."
+        ]
+      },
+      {
+        "title": "Our Promise",
+        "paragraphs": [
+          "We don't just execute projects; we build trust, deliver excellence, and create long-term value."
+        ]
+      }
     ]
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive solutions for transmission line projects, surveys, and geotechnical engineering",
+    "subtitle": "Reliable engineering and infrastructure services delivered with a focus on quality, safety, and timely execution",
     "categories": [
       {
-        "id": "fieldwork",
-        "title": "On-Field Survey Activities",
-        "icon": "🛰️",
-        "image": "assets/images/imageByServices/On-Field Survey Activities.jpg",
-        "alt": "On-field survey activities with surveying equipment",
-        "items": [
-          "Route Alignment Survey",
-          "Preliminary Survey",
-          "Detailed Survey",
-          "Check Survey",
-          "Cadastral Survey",
-          "Topographical Survey",
-          "DGPS Survey",
-          "PLS-CADD Design"
-        ]
-      },
-      {
-        "id": "design",
-        "title": "Data Processing & Design",
-        "icon": "🖥️",
-        "image": "assets/images/imageByServices/Data Processing & Design.webp",
-        "alt": "Data processing and route design engineering",
-        "items": [
-          "Route Alignment Maps",
-          "PLS-CADD Profiles",
-          "3D Drawings",
-          "Sag Templates",
-          "Crossing Proposals",
-          "Contour Maps",
-          "GIS Analysis",
-          "Digital Terrain Models"
-        ]
-      },
-      {
         "id": "transmission",
-        "title": "Transmission Line Construction",
+        "title": "Power Transmission & Distribution",
         "icon": "⚡",
         "image": "assets/images/imageByServices/Transmission Line Construction.jfif",
-        "alt": "Transmission line construction and tower installation",
+        "alt": "Power transmission line construction",
         "items": [
-          "Tower Erection",
-          "Line Installation",
-          "Stringing Work",
-          "Grounding",
-          "Testing & Commissioning",
-          "Route Inspection",
-          "Cable Management",
-          "System Integration"
+          "Transmission and distribution infrastructure",
+          "Engineering and installation",
+          "Construction and related electrical works"
         ]
       },
       {
-        "id": "substation",
-        "title": "Substation Construction",
-        "icon": "🔌",
-        "image": "assets/images/imageByServices/Substation Construction.jfif",
-        "alt": "Electrical substation construction and equipment installation",
-        "items": [
-          "Substation Layout Design",
-          "Equipment Installation",
-          "Control Systems",
-          "Safety Systems",
-          "Power Distribution",
-          "Testing Protocols",
-          "Maintenance Support",
-          "Capacity Planning"
-        ]
-      },
-      {
-        "id": "epc",
-        "title": "EPC Projects",
-        "icon": "🏭",
-        "image": "assets/images/imageByServices/EPC Projects.jfif",
-        "alt": "Engineering, procurement and construction project management",
-        "items": [
-          "Engineering Design",
-          "Materials Procurement",
-          "Quality Assurance",
-          "Project Management",
-          "Schedule Coordination",
-          "Cost Control",
-          "Risk Management",
-          "Stakeholder Communication"
-        ]
-      },
-      {
-        "id": "foundation",
-        "title": "Foundation Work",
-        "icon": "🏗️",
-        "image": "assets/images/imageByServices/foundation works.jfif",
-        "alt": "Tower foundation construction and geotechnical engineering",
-        "items": [
-          "Tower Foundation Construction",
-          "Civil Works",
-          "River Crossing Works",
-          "Long Route Construction",
-          "Foundation Design",
-          "Ground Improvement",
-          "Rock Excavation",
-          "Concrete Works"
-        ]
-      },
-      {
-        "id": "stringing",
-        "title": "Stringing Work",
-        "icon": "🔗",
-        "image": "assets/images/imageByServices/Transmission Line Construction.jfif",
-        "alt": "Power line stringing and cable installation",
-        "items": [
-          "Conductor Stringing",
-          "Earth Wire Installation",
-          "Tensioning",
-          "Sagging",
-          "Clipping & Clamping",
-          "Joint Assembly",
-          "Splice Installation",
-          "Performance Testing"
-        ]
-      },
-      {
-        "id": "testing",
-        "title": "Testing & Commissioning",
-        "icon": "✅",
+        "id": "maintenance",
+        "title": "Operation & Maintenance",
+        "icon": "🔧",
         "image": "assets/images/imageByServices/Testing & Commissioning.jpg",
-        "alt": "Electrical testing and system commissioning procedures",
+        "alt": "Inspection and maintenance of electrical infrastructure",
         "items": [
-          "High-Voltage Testing",
-          "Insulation Testing",
-          "Load Testing",
-          "Functional Testing",
-          "Safety Testing",
-          "Performance Validation",
-          "Documentation",
-          "Final Handover"
+          "Reliable system operation",
+          "Inspection and maintenance",
+          "Technical support for operational reliability"
         ]
       },
       {
         "id": "civil",
-        "title": "Civil Infrastructure",
-        "icon": "🌉",
+        "title": "Civil Construction Works",
+        "icon": "🏗️",
         "image": "assets/images/imageByServices/Civil Infrastructure.jfif",
-        "alt": "Civil infrastructure development and road construction",
+        "alt": "Civil construction and infrastructure development",
         "items": [
-          "Access Road Development",
-          "Drainage Systems",
-          "Soil Stabilization",
-          "Grading & Leveling",
-          "Surface Preparation",
-          "Infrastructure Maintenance",
-          "Site Reclamation",
-          "Environmental Compliance"
+          "Foundation and structural construction",
+          "Site development",
+          "Associated civil works"
+        ]
+      },
+      {
+        "id": "roads",
+        "title": "Road Construction",
+        "icon": "🛣️",
+        "image": "assets/images/imageByServices/Civil Infrastructure.jfif",
+        "alt": "Road construction and development",
+        "items": [
+          "Road development and construction",
+          "Infrastructure improvement",
+          "Road maintenance"
+        ]
+      },
+      {
+        "id": "engineering",
+        "title": "Engineering & Technical Services",
+        "icon": "📐",
+        "image": "assets/images/imageByServices/Data Processing & Design.webp",
+        "alt": "Engineering planning and technical services",
+        "items": [
+          "Professional engineering services",
+          "Technical planning",
+          "Project coordination and execution support"
         ]
       },
       {
@@ -186,16 +195,11 @@
         "title": "Project Management",
         "icon": "📊",
         "image": "assets/images/imageByServices/Project Management.jfif",
-        "alt": "Project management and coordination",
+        "alt": "Engineering project planning and coordination",
         "items": [
-          "Planning & Scheduling",
-          "Resource Allocation",
-          "Budget Management",
-          "Risk Assessment",
-          "Team Coordination",
-          "Progress Tracking",
-          "Quality Monitoring",
-          "Stakeholder Reporting"
+          "Project planning and resource management",
+          "Site supervision and coordination",
+          "Monitoring and timely execution"
         ]
       }
     ]
@@ -228,78 +232,17 @@
     "title": "Our Clients",
     "subtitle": "Trusted by India's leading power infrastructure contractors",
     "items": [
-      {
-        "name": "KEC International Ltd.",
-        "logo": "assets/images/imageByCompany/kecrpg.png",
-        "alt": "KEC International Ltd logo",
-        "url": "https://www.kecrpg.com/"
-      },
-      {
-        "name": "Kalpataru Projects International Limited",
-        "logo": "assets/images/imageByCompany/kalpataruprojects.png",
-        "alt": "Kalpataru Projects International Limited logo",
-        "url": "https://kalpataruprojects.com/"
-      },
-      {
-        "name": "Skipper Limited",
-        "logo": "assets/images/imageByCompany/skipperlimited.png",
-        "alt": "Skipper Limited logo",
-        "url": "https://www.skipperlimited.com/"
-      },
-      {
-        "name": "Transrail Lighting Limited",
-        "logo": "assets/images/imageByCompany/transrail.webp",
-        "alt": "Transrail Lighting Limited logo",
-        "url": "https://transrail.in/media/"
-      },
-      {
-        "name": "Bajel Projects Limited",
-        "logo": "assets/images/imageByCompany/bajelprojects.gif",
-        "alt": "Bajel Projects Limited logo",
-        "url": "https://www.bajelprojects.com/"
-      },
-      {
-        "name": "DBS Engineers Pvt. Ltd.",
-        "logo": "assets/images/imageByCompany/dbsengineerspvtltd.png",
-        "alt": "DBS Engineers Pvt. Ltd. logo",
-        "url": "https://dbsengineerspvtltd.com/"
-      },
-      {
-        "name": "Mohan Energy Corporation Pvt. Ltd.",
-        "logo": "assets/images/imageByCompany/mohanenergy.jpg",
-        "alt": "Mohan Energy Corporation Pvt. Ltd. logo",
-        "url": "https://mohanenergy.com/"
-      },
-      {
-        "name": "UltraTech Cement Limited",
-        "logo": "assets/images/imageByCompany/ultratechcement.png",
-        "alt": "UltraTech Cement Limited logo",
-        "url": "https://www.ultratechcement.com/about-us/media/press-kit"
-      },
-      {
-        "name": "Megha Engineering (MEIL)",
-        "logo": "assets/images/imageByCompany/meil.png",
-        "alt": "Megha Engineering MEIL logo",
-        "url": "https://www.meil.in/"
-      },
-      {
-        "name": "PGCIL",
-        "logo": "assets/images/imageByCompany/powergrid.svg",
-        "alt": "Power Grid Corporation of India Limited logo",
-        "url": "https://www.powergrid.in/"
-      },
-      {
-        "name": "UPPTCL",
-        "logo": "assets/images/imageByCompany/upptcl.png",
-        "alt": "Uttar Pradesh Poorv Kshetra Vidyut Limited logo",
-        "url": "https://www.upptcl.org/"
-      },
-      {
-        "name": "DVC",
-        "logo": "assets/images/imageByCompany/dvc.jpg",
-        "alt": "Damodar Valley Corporation logo",
-        "url": "https://www.dvc.gov.in/"
-      }
+      { "name": "KEC International Ltd.", "logo": "assets/images/imageByCompany/kecrpg.png", "alt": "KEC International Ltd logo", "url": "https://www.kecrpg.com/" },
+      { "name": "Kalpataru Projects International Limited", "logo": "assets/images/imageByCompany/kalpataruprojects.png", "alt": "Kalpataru Projects International Limited logo", "url": "https://kalpataruprojects.com/" },
+      { "name": "Skipper Limited", "logo": "assets/images/imageByCompany/skipperlimited.png", "alt": "Skipper Limited logo", "url": "https://www.skipperlimited.com/" },
+      { "name": "Transrail Lighting Limited", "logo": "assets/images/imageByCompany/transrail.webp", "alt": "Transrail Lighting Limited logo", "url": "https://transrail.in/media/" },
+      { "name": "Bajel Projects Limited", "logo": "assets/images/imageByCompany/bajelprojects.gif", "alt": "Bajel Projects Limited logo", "url": "https://www.bajelprojects.com/" },
+      { "name": "Mohan Energy Corporation Pvt. Ltd.", "logo": "assets/images/imageByCompany/mohanenergy.jpg", "alt": "Mohan Energy Corporation Pvt. Ltd. logo", "url": "https://mohanenergy.com/" },
+      { "name": "UltraTech Cement Limited", "logo": "assets/images/imageByCompany/ultratechcement.png", "alt": "UltraTech Cement Limited logo", "url": "https://www.ultratechcement.com/about-us/media/press-kit" },
+      { "name": "Megha Engineering (MEIL)", "logo": "assets/images/imageByCompany/meil.png", "alt": "Megha Engineering MEIL logo", "url": "https://www.meil.in/" },
+      { "name": "PGCIL", "logo": "assets/images/imageByCompany/powergrid.svg", "alt": "Power Grid Corporation of India Limited logo", "url": "https://www.powergrid.in/" },
+      { "name": "UPPTCL", "logo": "assets/images/imageByCompany/upptcl.png", "alt": "Uttar Pradesh Poorv Kshetra Vidyut Limited logo", "url": "https://www.upptcl.org/" },
+      { "name": "DVC", "logo": "assets/images/imageByCompany/dvc.jpg", "alt": "Damodar Valley Corporation logo", "url": "https://www.dvc.gov.in/" }
     ]
   },
   "gallery": {
@@ -317,12 +260,12 @@
     ]
   },
   "sampleReports": {
-    "title": "Sample Technical Reports",
-    "subtitle": "Representative survey and engineering deliverables",
+    "title": "Engineering Work Samples",
+    "subtitle": "Visual highlights from our engineering and infrastructure service areas",
     "items": [
-      { "title": "Route Alignment Map", "image": "assets/img/reports/route-alignment-map.jpg", "alt": "Transmission line route alignment map with terrain overlay", "desc": "Detailed route alignment map showing terrain, obstacles, and proposed tower locations" },
-      { "title": "Line Profile", "image": "assets/img/reports/line-profile.jpg", "alt": "Transmission line elevation profile", "desc": "Engineering profile showing elevation changes, clearances, and crossing details" },
-      { "title": "3D Terrain Model", "image": "assets/img/reports/3d-profile.jpg", "alt": "3D terrain profile of transmission route", "desc": "3D visualization of route terrain for better visualization and planning" }
+      { "title": "Transmission Line Engineering", "image": "assets/images/imageByServices/Data Processing & Design.webp", "alt": "Transmission line engineering profile displayed in design software", "desc": "Engineering design and technical data for transmission line infrastructure." },
+      { "title": "Power Transmission Infrastructure", "image": "assets/images/imageByServices/Transmission Line Construction.jfif", "alt": "Power transmission line construction", "desc": "Visual highlight of power transmission infrastructure and construction services." },
+      { "title": "Civil & Foundation Works", "image": "assets/images/imageByServices/foundation works.jfif", "alt": "Civil construction and foundation works", "desc": "Visual highlight of civil construction and foundation engineering services." }
     ]
   },
   "equipment": {
@@ -351,19 +294,23 @@
       "name": "C. S. Singh",
       "role": "Surveyor & Founder",
       "experience": "12+ years",
-      "previous": "DBS Engineers, RS Infra Project, Bajaj Electricals, Associated Power Structures, Prakash Electricals"
+      "previous": "RS Infra Project, Bajaj Electricals, Associated Power Structures, Prakash Electricals"
     }
   },
   "whyUs": {
     "title": "Why Choose CSS Engineers",
-    "headline": "We combine cutting-edge surveying technology with 12+ years of field expertise to deliver accurate, reliable, and sustainable engineering solutions.",
+    "headline": "Quality, commitment, and customer satisfaction are the foundations of our work. We deliver reliable and cost-effective engineering solutions with a focus on performance, safety, and professionalism.",
     "strengths": [
-      "Experienced team with proven track record in transmission line projects",
-      "Advanced surveying equipment and technology (Total Stations, DGPS, GIS)",
-      "Comprehensive service offerings from survey to design to foundation work",
-      "Strong relationships with India's leading power infrastructure contractors",
-      "Commitment to accuracy, safety, and project timeliness",
-      "Skilled workforce of 30+ professionals"
+      "Technical expertise and practical experience across engineering disciplines",
+      "Quality workmanship and a commitment to customer satisfaction",
+      "Safety-first working practices and environmental responsibility",
+      "Efficient planning, coordination, and timely project delivery",
+      "Experienced engineers, supervisors, and skilled technical personnel",
+      "Customer-focused, cost-effective solutions and effective resource use",
+      "Reliable execution in power transmission, distribution, civil construction, and roads",
+      "Professional integrity, transparency, and accountability",
+      "Continuous improvement through modern technologies and engineering practices",
+      "Ability to serve government, public sector, and private organizations"
     ],
     "stats": [
       { "label": "Years of Experience", "value": "12+" },
@@ -375,7 +322,7 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with CSS Engineers for project inquiries and partnership opportunities",
-    "phone": "+91 8299080754",
+    "phone": "05413-297050",
     "email": "cssengineerspvtltd@gmail.com",
     "address": "C/o. Arati, 1st Floor, Derehun, Post-Chakia, Chakia, Chandauli - 232103, Uttar Pradesh, India",
     "mapQuery": "Chakia, Chandauli, Uttar Pradesh, India",
@@ -388,13 +335,12 @@
     { "id": "home", "label": "Home" },
     { "id": "about", "label": "About" },
     { "id": "services", "label": "Services" },
-    { "id": "projects", "label": "Projects" },
     { "id": "clients", "label": "Clients" },
     { "id": "gallery", "label": "Gallery" },
     { "id": "why-us", "label": "Why Us" },
     { "id": "contact", "label": "Contact" }
   ],
   "footer": {
-    "copyright": "© 2026 CSS ENGINEERS PRIVATE LIMITED. All rights reserved. CIN: U42101UP2026PTC248868"
+    "copyright": "© CSS ENGINEERS PRIVATE LIMITED. All rights reserved."
   }
 }

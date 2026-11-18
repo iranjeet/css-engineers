@@ -35,7 +35,7 @@ function renderSite(data) {
   renderGallery(data.gallery);
   renderSampleReports(data.sampleReports);
   renderWhyUs(data.whyUs);
-  renderContact(data.contact, data.company);
+  renderContact(data.contact);
   renderFooter(data.company, data.footer);
 }
 
@@ -70,28 +70,32 @@ function renderHero(company) {
 function renderAbout(about, company) {
   const contentDiv = document.getElementById('about-content');
   contentDiv.innerHTML = `
-    ${about.paragraphs.map(p => `<p>${p}</p>`).join('')}
-    <div class="about-highlights">
-      ${about.highlights.map(h => `
-        <div class="highlight-card">
-          <h3>${h.title}</h3>
-          <p>${h.text}</p>
-        </div>
-      `).join('')}
-    </div>
+    <p>${about.paragraphs[0]}</p>
+    <details class="about-details">
+      <summary class="btn btn-primary">
+        <span class="read-more-open">Read more about CSS Engineers</span>
+        <span class="read-more-close">Show less</span>
+      </summary>
+      <div class="about-highlights">
+        ${about.sections.map(section => `
+          <div class="highlight-card">
+            <h3>${section.title}</h3>
+            ${(section.paragraphs || []).map(p => `<p>${p}</p>`).join('')}
+            ${section.items ? `<ul>${section.items.map(item => `<li>${item}</li>`).join('')}</ul>` : ''}
+          </div>
+        `).join('')}
+      </div>
+    </details>
   `;
   
   const legalDiv = document.getElementById('about-legal');
   legalDiv.innerHTML = `
     <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem; color: #2ba4f0;">Company Information</h3>
+    <div class="certification-card">ISO 9001:2015 CERTIFIED</div>
     ${[
       { label: 'Legal Name', value: company.name },
-      { label: 'Short Name', value: company.shortName },
-      { label: 'CIN', value: company.cin },
-      { label: 'Incorporated', value: company.incorporated },
-      { label: 'Act', value: company.act },
-      { label: 'Phone', value: company.phone },
-      { label: 'Email', value: company.email },
+      { label: 'Phone', value: `<a href="tel:${company.phone.replace(/\D/g, '')}">${company.phone}</a>` },
+      { label: 'Email', value: `<a href="mailto:${company.email}">${company.email}</a>` },
       { label: 'Registered Office', value: company.registeredOffice }
     ].map(item => `
       <div class="legal-item">
@@ -140,14 +144,11 @@ function renderServices(services) {
 // Render projects
 function renderProjects(projects) {
   document.getElementById('projects-subtitle').textContent = projects.subtitle;
-  
-  // Calculate totals
+
   const totalProjects = projects.items.length;
-  const totalKm = projects.items.reduce((sum, p) => sum + p.km, 0);
-  const uniqueClients = new Set(projects.items.map(p => p.client)).size;
-  
-  const summaryDiv = document.getElementById('projects-summary');
-  summaryDiv.innerHTML = `
+  const totalKm = projects.items.reduce((sum, project) => sum + project.km, 0);
+  const uniqueClients = new Set(projects.items.map(project => project.client)).size;
+  document.getElementById('projects-summary').innerHTML = `
     <div class="project-stat scroll-reveal">
       <div class="project-stat-value">${totalProjects}+</div>
       <div class="project-stat-label">Completed Projects</div>
@@ -161,15 +162,13 @@ function renderProjects(projects) {
       <div class="project-stat-label">Client Partners</div>
     </div>
   `;
-  
-  // Populate table
-  const tableBody = document.querySelector('#projects-table tbody');
-  tableBody.innerHTML = projects.items.map(p => `
+
+  document.querySelector('#projects-table tbody').innerHTML = projects.items.map(project => `
     <tr>
-      <td>${p.no}</td>
-      <td>${p.work}</td>
-      <td>${p.km}</td>
-      <td>${p.client}</td>
+      <td>${project.no}</td>
+      <td>${project.work}</td>
+      <td>${project.km}</td>
+      <td>${project.client}</td>
     </tr>
   `).join('');
 }
@@ -177,26 +176,22 @@ function renderProjects(projects) {
 // Render clients with logos
 function renderClients(clients) {
   document.getElementById('clients-subtitle').textContent = clients.subtitle;
-  
-  const clientsGrid = document.getElementById('clients-grid');
-  clientsGrid.innerHTML = clients.items.map((client, i) => {
-    // Handle both old string format and new object format
+  document.getElementById('clients-grid').innerHTML = clients.items.map((client, index) => {
     if (typeof client === 'string') {
       return `
-        <div class="client-card scroll-reveal" style="transition-delay: ${i * 50}ms;">
+        <div class="client-card scroll-reveal" style="transition-delay: ${index * 50}ms;">
           <p>${client}</p>
         </div>
       `;
-    } else {
-      // New format with logo
-      return `
-        <div class="client-card scroll-reveal" style="transition-delay: ${i * 50}ms;">
-          <a href="${client.url}" target="_blank" rel="noopener noreferrer" class="client-logo-link">
-            <img src="${client.logo}" alt="${client.alt}" class="client-logo" loading="lazy" onerror="this.parentElement.innerHTML='<p>${client.name}</p>'">
-          </a>
-        </div>
-      `;
     }
+
+    return `
+      <div class="client-card scroll-reveal" style="transition-delay: ${index * 50}ms;">
+        <a href="${client.url}" target="_blank" rel="noopener noreferrer" class="client-logo-link">
+          <img src="${client.logo}" alt="${client.alt}" class="client-logo" loading="lazy" onerror="this.parentElement.innerHTML='<p>${client.name}</p>'">
+        </a>
+      </div>
+    `;
   }).join('');
 }
 
@@ -215,6 +210,7 @@ function renderGallery(gallery) {
 
 // Render sample reports
 function renderSampleReports(reports) {
+  document.getElementById('reports-title').textContent = reports.title;
   document.getElementById('reports-subtitle').textContent = reports.subtitle;
   
   const reportsGrid = document.getElementById('reports-grid');
@@ -229,12 +225,10 @@ function renderSampleReports(reports) {
   `).join('');
 }
 
-// Generate WhatsApp QR code URL (using QR code API)
+// Generate WhatsApp QR code URL
 function generateWhatsAppQRCode(phoneNumber) {
-  // Using qr-server.com API to generate QR code for WhatsApp
   const whatsappURL = `https://wa.me/${phoneNumber.replace(/[^0-9]/g, '')}`;
-  const qrCodeURL = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(whatsappURL)}`;
-  return qrCodeURL;
+  return `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(whatsappURL)}`;
 }
 
 // Render why us
@@ -247,9 +241,8 @@ function renderWhyUs(whyUs) {
       <div class="strength-text">${strength}</div>
     </div>
   `).join('');
-  
-  const statsDiv = document.getElementById('why-us-stats');
-  statsDiv.innerHTML = whyUs.stats.map(stat => `
+
+  document.getElementById('why-us-stats').innerHTML = (whyUs.stats || []).map(stat => `
     <div class="stat-card scroll-reveal">
       <div class="stat-value">${stat.value}</div>
       <div class="stat-label">${stat.label}</div>
@@ -258,7 +251,7 @@ function renderWhyUs(whyUs) {
 }
 
 // Render contact
-function renderContact(contact, company) {
+function renderContact(contact) {
   document.getElementById('contact-subtitle').textContent = contact.subtitle;
   
   const contactInfo = document.getElementById('contact-info');
@@ -269,7 +262,7 @@ function renderContact(contact, company) {
       <div class="contact-icon">📞</div>
       <div class="contact-details">
         <h3>Phone</h3>
-        <p><a href="tel:${contact.phone}">${contact.phone}</a></p>
+        <p><a href="tel:${contact.phone.replace(/\D/g, '')}">${contact.phone}</a></p>
       </div>
     </div>
     <div class="contact-item">
@@ -362,7 +355,11 @@ function handleMailtoForm(e, email) {
 
 // Render footer
 function renderFooter(company, footer) {
-  document.getElementById('footer').innerHTML = `<p>${footer.copyright}</p>`;
+  document.getElementById('footer').innerHTML = `
+    <p class="footer-certification">ISO 9001:2015 CERTIFIED</p>
+    <p><a href="tel:${company.phone.replace(/\D/g, '')}">${company.phone}</a></p>
+    <p>${footer.copyright}</p>
+  `;
 }
 
 // Setup features

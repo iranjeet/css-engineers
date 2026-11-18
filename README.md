@@ -1,6 +1,6 @@
 # CSS Engineers — Corporate Website
 
-A modern, responsive static website for **CSS ENGINEERS PRIVATE LIMITED**, a transmission line survey, geotechnical, and foundation engineering company.
+A modern, responsive static website for **CSS ENGINEERS PRIVATE LIMITED**, an engineering and infrastructure services company.
 
 ## 🚀 Quick Start
 
@@ -19,15 +19,14 @@ open http://localhost:8080
 ## 📋 What's Included
 
 - **Home** — Company introduction & hero
-- **About** — Mission, objectives, legal information
-- **Services** — 5 service categories (survey, design, geotechnical, foundation, fieldwork)
-- **Projects** — 19 transmission line projects (1,900+ km)
-- **Clients** — 12 major clients
-- **Gallery** — 8 project samples
-- **Sample Reports** — 3 technical report images
-- **Equipment & Team** — Instruments, staffing, key personnel
-- **Why Us** — Company strengths & stats
-- **Contact** — Address, phone, email, contact form, Google Map
+- **About** — Company profile, vision, mission, capabilities, QHSE, and ISO certification
+- **Services** — Transmission & distribution, O&M, civil construction, roads, engineering, and project management
+- **Projects** — Existing transmission line portfolio (temporarily hidden)
+- **Clients** — Existing client directory and logos
+- **Gallery** — Engineering and infrastructure images
+- **Engineering Work Samples** — 3 engineering and infrastructure visuals
+- **Why Us** — Company strengths
+- **Contact** — Address, phone, email, WhatsApp QR code, contact form, Google Map
 
 ## 🛠 Technology
 
@@ -47,8 +46,7 @@ css-engineers/
 ├── assets/
 │   ├── css/styles.css      # Theme & layout
 │   ├── js/main.js          # Render logic
-│   └── img/                # Logos, gallery, reports
-└── knowledge-base/         # Markdown docs (optional)
+│   └── images/             # Company, service, and gallery images
 ```
 
 ## 🎨 Design System
@@ -63,17 +61,15 @@ css-engineers/
 | Field | Value |
 |-------|-------|
 | **Legal Name** | CSS ENGINEERS PRIVATE LIMITED |
-| **CIN** | U42101UP2026PTC248868 |
-| **Incorporated** | 11 June 2026 |
 | **Location** | Chakia, Chandauli, Uttar Pradesh, India |
-| **Phone** | +91 8299080754 |
+| **Phone** | 05413-297050 |
 | **Email** | cssengineerspvtltd@gmail.com |
+| **Certification** | ISO 9001:2015 CERTIFIED |
 
 ## 🔄 Updating Content
 
 1. Edit `content/data.json` — the single source of truth
-2. Optionally update `knowledge-base/*.md` (mirrors JSON)
-3. Refresh browser — changes appear immediately
+2. Refresh browser — changes appear immediately
 
 ## 🚀 Deploy to GitHub Pages
 

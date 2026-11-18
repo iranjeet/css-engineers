@@ -6,7 +6,7 @@ Use this document to recreate or deploy the **CSS ENGINEERS PRIVATE LIMITED** st
 
 ## 1. What this project is
 
-A **static one-page corporate website** for **CSS ENGINEERS PRIVATE LIMITED** — a transmission line survey, geotechnical, and foundation engineering company in Chakia, Chandauli, Uttar Pradesh, India.
+A **static one-page corporate website** for **CSS ENGINEERS PRIVATE LIMITED**, providing engineering and infrastructure services in transmission and distribution, civil construction, roads, and operation and maintenance.
 
 **Tech stack (no build step, no npm):**
 
@@ -16,7 +16,6 @@ A **static one-page corporate website** for **CSS ENGINEERS PRIVATE LIMITED** �
 | CSS | `assets/css/styles.css` | Custom corporate theme |
 | JavaScript | `assets/js/main.js` | Fetches JSON and renders all content |
 | JSON | `content/data.json` | Runtime single source of truth |
-| Markdown | `knowledge-base/` | Human-readable content docs (keep in sync with JSON) |
 
 **Important:** The site uses `fetch("content/data.json")`. You **must** run a local HTTP server. Opening `index.html` directly (`file://`) will fail.
 
@@ -63,37 +62,9 @@ css-engineers/
 ├── content/
 │   └── data.json                # ALL site content
 ├── assets/
-│   ├── css/
-│   │   └── styles.css           # Full theme
-│   ├── js/
-│   │   └── main.js              # Render logic
-│   └── img/
-│       ├── favicon.svg
-│       ├── logo.jpg             # Company logo (header/hero/footer)
-│       ├── main_logo.jpg        # Alternate logo (not referenced in JSON)
-│       ├── gallery/             # 8 SVG placeholder images
-│       │   ├── conveyor-route.svg
-│       │   ├── foundation-work.svg
-│       │   ├── foundation-work-2.svg
-│       │   ├── hydrographical.svg
-│       │   ├── mining-area.svg
-│       │   ├── railway-survey.svg
-│       │   ├── soil-testing.svg
-│       │   └── transmission-line.svg
-│       └── reports/             # Real images from company profile doc
-│           ├── route-alignment-map.jpg
-│           ├── line-profile.jpg
-│           └── 3d-profile.jpg
-└── knowledge-base/
-    ├── README.md
-    ├── company.md
-    ├── services.md
-    ├── projects.md
-    ├── clients.md
-    ├── equipment.md
-    ├── gallery.md
-    ├── why-us.md
-    └── contact.md
+│   ├── css/styles.css           # Existing theme and layout
+│   ├── images/                  # Company, service, and gallery images
+│   └── js/main.js               # Render logic
 ```
 
 ---
@@ -109,20 +80,15 @@ fetch("content/data.json")
        ↓
 renderSite(data) calls:
   setMeta, renderNavigation, renderHero, renderAbout,
-  renderServices, renderProjects, renderClients, renderGallery,
-  renderSampleReports, renderEquipment, renderWhyUs,
-  renderContact, renderFooter
+  renderServices, renderGallery, renderSampleReports,
+  renderWhyUs, renderContact, renderFooter
        ↓
 setupNavigation, setupScrollReveal, setupHeaderScroll
 ```
 
 **Design pattern:** HTML is static structure only. All text, lists, tables, and images come from `data.json`.
 
-**Content workflow:**
-
-1. Edit `knowledge-base/*.md` (for humans)
-2. Mirror changes in `content/data.json` (what the site reads)
-3. Refresh browser
+**Content workflow:** Edit `content/data.json` and refresh the browser.
 
 ---
 
@@ -131,33 +97,30 @@ setupNavigation, setupScrollReveal, setupHeaderScroll
 | Section ID | Nav label | Data key | What it shows |
 |------------|-----------|----------|---------------|
 | `home` | Home | `company` | Hero with name, tagline, logo, CTA buttons |
-| `about` | About | `about` + `company` | Paragraphs, Objective/Strength cards, legal sidebar |
-| `services` | Services | `services` | 5 service category cards |
-| `projects` | Projects | `projects` | Summary stats + 17-row project table |
-| `clients` | Clients | `clients` | 12 client name cards |
-| `gallery` | Gallery | `gallery` | 8 gallery image cards (SVG placeholders) |
-| `sample-reports` | *(not in nav)* | `sampleReports` | 3 real report images |
-| `equipment` | *(not in nav)* | `equipment` | Instruments, workforce, key person |
-| `why-us` | Why Us | `whyUs` | Headline, strengths, 4 stat cards |
+| `about` | About | `about` + `company` | Company profile, capability sections, ISO certification, contact details |
+| `services` | Services | `services` | 6 engineering and infrastructure service cards |
+| `projects` | *(temporarily hidden)* | `projects` | Summary stats and project table retained in source |
+| `clients` | Clients | `clients` | Existing client logos and directory |
+| `gallery` | Gallery | `gallery` | Engineering and infrastructure images |
+| `sample-reports` | *(not in nav)* | `sampleReports` | 3 engineering and infrastructure visuals |
+| `why-us` | Why Us | `whyUs` | Headline and company strengths |
 | `contact` | Contact | `contact` | Address, phone, email, form, Google Map |
 
-Navigation is driven by `data.json` → `navigation` (8 items). `sample-reports` and `equipment` are on the page but not in the nav bar.
+Navigation is driven by `data.json` → `navigation` (7 visible items). The Projects section and its data are retained but temporarily hidden.
 
 ---
 
-## 6. Company details (legal)
+## 6. Company details
 
 | Field | Value |
 |-------|-------|
 | **Legal name** | CSS ENGINEERS PRIVATE LIMITED |
 | **Short name** | CSS Engineers Pvt. Ltd. |
-| **CIN** | U42101UP2026PTC248868 |
-| **Incorporated** | 11 June 2026 |
-| **Act** | Companies Act, 2013 |
 | **Registered office** | C/o. Arati, 1st Floor, Derehun, Post-Chakia, Chakia, Chandauli - 232103, Uttar Pradesh, India |
-| **Phone** | +91 8299080754 |
+| **Phone** | 05413-297050 |
 | **Email** | cssengineerspvtltd@gmail.com |
-| **Tagline** | Trusted Transmission Line, Survey & Geotechnical Engineering Solutions |
+| **Certification** | ISO 9001:2015 CERTIFIED |
+| **Tagline** | Engineering and Infrastructure Solutions for Transmission, Civil Construction & Roads |
 
 **Branding rule:** All content refers to **CSS Engineers Private Limited** only. Do **not** use "CS Enterprises" anywhere.
 
@@ -191,19 +154,14 @@ cp word/media/image3.jpeg 3d-profile.jpg
 
 ```json
 {
-  "company": { "name", "shortName", "tagline", "logo", "favicon", "incorporated", "act", "cin", "registeredOffice" },
-  "about": { "title", "paragraphs", "highlights": [{ "title", "text" }] },
+  "company": { "name", "shortName", "tagline", "logo", "favicon", "registeredOffice", "phone", "email" },
+  "about": { "title", "paragraphs", "sections" },
   "services": { "title", "subtitle", "categories": [{ "id", "title", "icon", "items" }] },
   "projects": { "title", "subtitle", "columns", "items": [{ "no", "work", "km", "client" }] },
   "clients": { "title", "subtitle", "items" },
   "sampleReports": { "title", "subtitle", "items": [{ "title", "image", "alt", "desc" }] },
-  "equipment": {
-    "title", "subtitle", "instrumentsTitle", "instruments": [{ "name", "qty" }],
-    "staffTitle", "staff": [{ "role", "count" }],
-    "keyPerson": { "name", "role", "experience", "previous" }
-  },
   "gallery": { "title", "subtitle", "items": [{ "title", "image", "alt" }] },
-  "whyUs": { "title", "headline", "strengths", "stats": [{ "label", "value" }] },
+  "whyUs": { "title", "headline", "strengths", "stats" },
   "contact": { "title", "subtitle", "phone", "email", "address", "mapQuery", "form": { "type", "action" } },
   "navigation": [{ "id", "label" }],
   "footer": { "copyright" }
@@ -220,16 +178,17 @@ The canonical copy is `content/data.json` in this repo.
 python3 -m http.server 8080
 # Open http://localhost:8080
 
-curl -s http://localhost:8080/content/data.json | python3 -c "import sys,json; d=json.load(sys.stdin); print(len(d['projects']['items']), 'projects'); print(len(d['clients']['items']), 'clients')"
-# Expected: 17 projects, 12 clients
+curl -s http://localhost:8080/content/data.json | python3 -c "import sys,json; d=json.load(sys.stdin); print(len(d['projects']['items']), 'projects'); print(len(d['clients']['items']), 'clients'); print(d['company']['phone'])"
+# Expected: 17 projects (temporarily hidden), 11 clients, and 05413-297050
 ```
 
 In browser:
 
-- [ ] Nav shows 8 links (Home → Contact)
-- [ ] Projects table has 17 rows
-- [ ] Clients grid has 12 cards
-- [ ] 3 sample report images load
+- [ ] Navigation links point to existing sections
+- [ ] ISO certification and company profile are visible
+- [ ] Projects section remains in source but is hidden from the site and navigation
+- [ ] Clients section remains available
+- [ ] Engineering service and work-sample images load
 - [ ] Contact map embeds
 - [ ] No "CS Enterprises" text anywhere
 
@@ -238,7 +197,7 @@ In browser:
 ## 20. Project history
 
 1. **Initial site** — About, Services, Gallery, Why Us, Contact
-2. **From company profile doc** — Projects, Clients, Sample Reports, Equipment & Team, expanded Services, updated stats
+2. **Company profile update** — Updated company content, services, contact information, and ISO certification; retained project data while temporarily hiding its section
 3. **Branding** — Removed all "CS Enterprises" references; company is CSS Engineers Private Limited only
 
 ---
